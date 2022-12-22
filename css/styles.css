@@ -445,9 +445,9 @@ fill: var(--accent-color);
 }
 .footer .conteiner {
     display: flex;
+    align-items: baseline;
 }
 .join-us {
-    margin-top: 12px;
     margin-left: 70px;
 }
 .join-text {
@@ -533,7 +533,6 @@ color: var(--primaty-white-color);
 .subscribe {
     width: 570px;
     height: 86px;
-    margin-top: 12px;
 }
 
 .subscribe-form {
@@ -543,12 +542,14 @@ color: var(--primaty-white-color);
 .subscribe-input {
   width: 358px;
   height: 100%;
+  color: #188CE8;
 background-color: transparent;
 border: 1px solid rgba(255, 255, 255, 0.3);
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
 padding: 15px 16px;  
 margin-right: 12px;
+outline: none;
 }
 
 .subscribe-button {
@@ -626,6 +627,7 @@ border-radius: 4px;
 border: 1px solid rgba(0, 0, 0, 0.1);
 border-radius: 50%;
 transition: fill var(--transition-duration) var(--transition-timing-function);
+cursor: pointer;
 }
 .modal-button:focus,
 .modal-button:hover {
@@ -647,6 +649,7 @@ margin-bottom: 12px;
 
 .modal-icon-wrapper {
     position: relative;
+    margin-top: 4px;
 }
 .modal-icon {
     position: absolute;
@@ -669,6 +672,7 @@ transition: border-color var(--transition-duration) var(--transition-timing-func
 .modal-coment:hover,
 .modal-coment:focus {
     border-color: var(--accent-color);
+    outline: none;
 }
 .modal-input:hover + svg,
 .modal-input:focus + svg {
@@ -685,10 +689,12 @@ color: #757575;
 .modal-coment {
     width: 100%;
     height: 120px;
+    margin-top: 4px;
     padding: 12px 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 transition: border-color var(--transition-duration) var(--transition-timing-function);
+resize: none;
 }
 .modal-coment:focus,
 .modal-coment:hover,
@@ -710,13 +716,14 @@ background-image: url(../images/check-mark.svg);
 background-repeat: no-repeat;
 background-position: center;
 }
-.checkbox-rules {
-    cursor: pointer;
-}
 
-.checkbox-rules {
+.modal-input-group .checkbox-rules {
     display: flex;
     align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+line-height: 1.71;
 }
 .checkbox-rules::before {
     content: '';
